@@ -59,15 +59,6 @@ scissorsButton = Button(root, image=photoimage3, command=Scissors, borderwidth=0
 scissorsButton.pack(pady=20)
 
 
-
-
-
-
-
-
-
-
-
 # Random selection of the computer
 def computer_choice():
     option = ["Rock", "Paper", "Scissors"]

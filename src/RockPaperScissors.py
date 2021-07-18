@@ -113,31 +113,31 @@ def game(player, computer):
     computer = computer
     if computer == player:  # Scissors Scissors: Rock Rock: Paper Paper
         print("Same selection")
-        return pick.config(text="Same choices, try again", fg="red")
+        return pick.config(text="Same choices, try again", fg="red", font='Helvetica 15 bold')
 
     elif computer == "Rock" and player == "Scissors":
         print("Computer is the winner!")
-        return pick.config(text="computer Select Rock\n\nplayer Select Scissors \n\nCOMPUTER is the WINNER!!!", fg="green")
+        return pick.config(text="the computer select Rock\n\nyou chose Scissors \n\nCOMPUTER is the WINNER!!!", fg="green", font='Helvetica 15 bold')
 
     elif computer == "Rock" and player == "Paper":
         print("You are the winner!")
-        return pick.config(text="computer Select Rock\n\nplayer Select Paper\n\nPLAYER is the WINNER!!!", fg="blue")
+        return pick.config(text="computer select Rock\n\nyou chose Paper\n\nYOU are the WINNER!!!", fg="blue", font='Helvetica 15 bold')
 
     elif computer == "Paper" and player == "Scissors":
         print("You are the winner!")
-        return pick.config(text="computer Select Paper\n\nplayer Select Scissors\n\nPLAYER is the WINNER!!!", fg="blue")
+        return pick.config(text="the computer select Paper\n\nyou chose Scissors\n\nYOU are the WINNER!!!", fg="blue", font='Helvetica 15 bold')
 
     elif computer == "Paper" and player == "Rock":
         print("Computer is the winner!")
-        return pick.config(text="computer Select Paper\n\nplayer Select Rock\n\nCOMPUTER is the WINNER!!!", fg="green")
+        return pick.config(text="the computer select Paper\n\nyou chose a Rock\n\nCOMPUTER is the WINNER!!!", fg="green", font='Helvetica 15 bold')
 
     elif computer == "Scissors" and player == "Paper":
         print("Computer is the winner!")
-        return pick.config(text="computer SelectScissors\n\nplayer Select Paper\n\nCOMPUTER is the WINNER!!!", fg="green")
+        return pick.config(text="the computer selectScissors\n\nyou chose Paper\n\nCOMPUTER is the WINNER!!!", fg="green", font='Helvetica 15 bold')
 
     elif computer == "Scissors" and player == "Rock":
         print("You are the winner!")
-        return pick.config(text="computer Select Scissors\n\nplayer Select Rock\n\nPLAYER is the WINNER!!!", fg="blue")
+        return pick.config(text="the computer select Scissors\n\nyou chose a Rock\n\nYOU are the WINNER!!!", fg="blue", font='Helvetica 15 bold')
 
 
 root.mainloop()  # start over
